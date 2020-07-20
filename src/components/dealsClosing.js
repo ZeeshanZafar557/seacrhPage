@@ -12,23 +12,23 @@ import FormLabel from '@material-ui/core/FormLabel';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
+
 import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles((theme)=>({
 cardRoot:{
     maxWidth: 360,
+    height:668
+
 },
   media: {
-    height: 140,
+    height: 230,
+    width:360
   },
   root: {
     flexGrow: 1,
   },
-  paper: {
-    height: 140,
-    width: 100,
-  },
+
   control: {
     padding: theme.spacing(2),
   },
@@ -54,12 +54,14 @@ export default function MediaCard(props) {
             marginBottom:20,
             width:50,
          height:5,
-         background:'#375674'
+         background:'#375674',
+         marginTop:20,
+         marginBottom:40
         }} />
     <Grid container className={classes.root} direction="row"
     justify="center"
     alignItems="center">
-          <Grid item xs={4}>
+          <Grid item xs={12} md={4}>
     <Card className={classes.cardRoot}>
       <CardActionArea>
         <CardMedia
@@ -82,7 +84,7 @@ export default function MediaCard(props) {
             width:'100%',
          height:1,
          background:'silver',
-         margin:5
+         margin:5,
         }} />
         
      <Grid
@@ -180,15 +182,21 @@ export default function MediaCard(props) {
       </CardActionArea>
       <CardActions style={{
         display:'flex',justifyContent:'center',
-        margin:20
+        margin:5
       }}>
-      <Button variant="contained" color="secondary" >
+      <Button variant="contained" style={{
+        background:'#FD615A',
+        color:'#fff',
+        width:167,
+        height:50,
+        fontSize:14
+      }} >
   Register To Bid
 </Button>
       </CardActions>
     </Card>
     </Grid>
-    <Grid item xs={4}>
+    <Grid item xs={12} md={4}>
     <Card className={classes.cardRoot}>
       <CardActionArea>
         <CardMedia
@@ -309,15 +317,21 @@ export default function MediaCard(props) {
       </CardActionArea>
       <CardActions style={{
         display:'flex',justifyContent:'center',
-        margin:20
+        margin:5
       }}>
-      <Button variant="contained" color="secondary" >
+      <Button variant="contained" style={{
+        background:'#FD615A',
+        color:'#fff',
+        width:167,
+        height:50,
+        fontSize:14
+      }} >
   Register To Bid
 </Button>
       </CardActions>
     </Card>
     </Grid>
-    <Grid item xs={4}>
+    <Grid item xs={12} md={4}>
     <Card className={classes.cardRoot}>
       <CardActionArea>
         <CardMedia
@@ -438,15 +452,28 @@ export default function MediaCard(props) {
       </CardActionArea>
       <CardActions style={{
         display:'flex',justifyContent:'center',
-        margin:20
+        margin:5
       }}>
-      <Button variant="contained" color="secondary" >
+   <Button variant="contained" style={{
+        background:'#FD615A',
+        color:'#fff',
+        width:167,
+        height:50,
+        fontSize:14
+      }} >
   Register To Bid
 </Button>
       </CardActions>
     </Card>
     </Grid>
     </Grid>
+    <Divider style={{
+            marginTop:150,
+            marginBottom:150,
+            width:'100%',
+         height:1,
+         background:'silver'
+        }} />
     </Container>
   );
 }

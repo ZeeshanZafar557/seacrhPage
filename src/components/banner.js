@@ -9,13 +9,15 @@ import Grid from '@material-ui/core/Grid';
 import 'fontsource-roboto';
 import IconButton from '@material-ui/core/IconButton';
 import SeacrhIcon from '@material-ui/icons/SearchOutlined';
+import Hidden from '@material-ui/core/Hidden';
+import Divider from '@material-ui/core/Divider';
 const styles = {
     paperContainer: {
         backgroundImage: `url(${Image})`,
         backgroundRepeat:'no-repeat',
         width:'100%',
         backgroundSize:'cover',
-        height:400
+        height:450
     }
 };
 const useStyles = makeStyles((theme) => ({
@@ -41,35 +43,52 @@ export default function SimpleContainer() {
     <Typography style={{
         color:'#fff',
         paddingTop:70,
-        paddingLeft:70,
-        fontSize:50,
-       
+        paddingLeft:90,
+        fontSize:60,
+       fontWeight:'200',
+       letterSpacing:1.25271,
+     
     }}>
   Looking...
 </Typography>
 
 <Typography   style={{
-        color:'#fff',
-    
-        paddingLeft:70,
-        fontSize:50,
+           color:'#fff',
+         
+           paddingLeft:90,
+           fontSize:60,
+          fontWeight:'200',
+          letterSpacing:1.25271,
+         
     }}>
  for the right house for you !
 </Typography>
+<Divider style={{
+            marginBottom:20,
+            width:100,
+         height:4,
+         background:'#fff',
+         marginLeft:90,
+         marginTop:20
+        }} />
 <div className={classes.root}>
    
       <Grid container direction="row"
   justify="center"
   alignItems="start" style={{
      position:'absolute',
-     top:460-50
+     top:460,
+    
   }}>
-        <Grid item xs={3}>
+    
+        <Grid item md={3}>
+        <Hidden only={['sm','xs']}>
           <Paper className={classes.paper}>
               <Typography style={{
                 color:'#375674',
                 fontWeight:'bold'
               }}>
+               
               Search and Find
               </Typography>
               <Typography>
@@ -77,8 +96,10 @@ export default function SimpleContainer() {
               </Typography>
              
           </Paper>
+          </Hidden>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item md={3}>
+        <Hidden only={['sm','xs']}>
           <Paper className={classes.paper}>
          
               <Typography style={{
@@ -92,8 +113,10 @@ export default function SimpleContainer() {
               Singapure
               </Typography>
           </Paper>
+          </Hidden>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item md={3}>
+        <Hidden only={['sm','xs']}>
           <Paper className={classes.paper}>
        
               <Typography style={{
@@ -107,8 +130,10 @@ export default function SimpleContainer() {
               Select
               </Typography>
           </Paper>
+          </Hidden>
         </Grid>
         <Grid item xs={1}  justify="center" >
+        <Hidden only={['sm','xs']}>
           <Paper className={classes.paper} style={{
             background:'#fb635c',
            
@@ -120,6 +145,7 @@ export default function SimpleContainer() {
           <SeacrhIcon />
         </IconButton>
           </Paper>
+          </Hidden>
         </Grid>
       </Grid>
      

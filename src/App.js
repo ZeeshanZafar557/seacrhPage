@@ -9,6 +9,7 @@ render()
 {
   return(
     <>
+    
 <TopNav/>
 <Banner/>
 <DealsClosing name={'Deals Closing'}/>

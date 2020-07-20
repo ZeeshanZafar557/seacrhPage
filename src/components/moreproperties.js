@@ -19,8 +19,9 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
     
     },
-    cardRoot:{
-        maxWidth: 250,
+    paper:{
+        maxWidth: 610,
+        height:210
       
     },
     details: {
@@ -52,18 +53,19 @@ export default function Explore() {
     return (
         <Container maxWidth="xl" style={{
             backgroundColor:'#e6ecf7',
-          
         }}>
 
             <Grid container className={classes.root}
                 direction="row"
                 justify="center"
-                alignItems="center" >
+                alignItems="center"  >
                 {newArray.map(() => {
                     return (
                        
-                        <Grid item xs={5} style={{
-                            margin:20
+                        <Grid item xs={12} md={5} style={{
+                            marginTop:40,
+                            marginLeft:40,
+                            marginBottom:10
                         }}>
                         <Paper className={classes.paper}>
                           <Grid container spacing={2}>
@@ -71,17 +73,23 @@ export default function Explore() {
                               <ButtonBase className={classes.image}>
                                 <img className={classes.img} alt="complex" src="https://media.timeout.com/images/103812417/630/472/image.jpg" 
                                 style={{
-                                    width:200,
-                                    height:150,
-                                    margin:10
+                                  
+                                    width: '100%',
+                                    maxWidth: '200px',
+                                    height:160,
+                                    margin:20,
+                                    //im
                                 }}/>
                               </ButtonBase>
                             </Grid>
-                            <Grid item xs={12} sm container>
+                            <Grid item xs={12} sm container style={{
+                              marginTop:10
+                            }}>
                               <Grid item xs container direction="column" spacing={2}>
                                 <Grid item xs>
                                   <Typography  variant="h6" style={{
-                                    color:'#3e535b'
+                                    color:'#3e535b',
+                              
                                   }}>
                                     Neon Street
                                   </Typography>
@@ -91,8 +99,9 @@ export default function Explore() {
                                   <Typography variant="body2" color="textSecondary">
                                   Sydeny ,Australla
                                   </Typography>
-                                  <Typography variant="body1" color="error" style={{
-                                    fontWeight:'bold'
+                                  <Typography variant="body1"  style={{
+                                    fontWeight:'bold',
+                                    color:'#FD615A'
                                   }}>
                                   Year Of Completion &nbsp;&nbsp;2019
                                   </Typography>
@@ -108,12 +117,13 @@ export default function Explore() {
   direction="row"
   justify="space-around"
   alignItems="flex-start"
+  style={{marginTop:20}}
 >
 <Grid item xs={4} >
   <Typography style={{color:'#4c6371'}}>
     99 years
   </Typography>
-  <Typography style={{color:'#4c6371'}}>
+  <Typography style={{color:'#4c6371',marginTop:10}}>
     Land Tenure
   </Typography>
   </Grid>
@@ -121,7 +131,7 @@ export default function Explore() {
   <Typography style={{color:'#4c6371'}}>
     27281
   </Typography>
-  <Typography style={{color:'#4c6371'}}>
+  <Typography style={{color:'#4c6371',marginTop:10}}>
     Site Area
   </Typography>
   </Grid>
@@ -129,7 +139,7 @@ export default function Explore() {
   <Typography style={{color:'#4c6371'}}>
    3333 
   </Typography>
-  <Typography style={{color:'#4c6371'}}>
+  <Typography style={{color:'#4c6371',marginTop:10}}>
 NLA 9(SQFT)
   </Typography>
   </Grid>
