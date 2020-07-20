@@ -71,29 +71,72 @@ export default function Explore() {
                               <ButtonBase className={classes.image}>
                                 <img className={classes.img} alt="complex" src="https://media.timeout.com/images/103812417/630/472/image.jpg" 
                                 style={{
-                                    width:150,
-                                    height:150
+                                    width:200,
+                                    height:150,
+                                    margin:10
                                 }}/>
                               </ButtonBase>
                             </Grid>
                             <Grid item xs={12} sm container>
                               <Grid item xs container direction="column" spacing={2}>
                                 <Grid item xs>
-                                  <Typography gutterBottom variant="subtitle1">
-                                    Standard license
-                                  </Typography>
-                                  <Typography variant="body2" gutterBottom>
-                                    Full resolution 1920x1080 • JPEG
+                                  <Typography  variant="h6" style={{
+                                    color:'#3e535b'
+                                  }}>
+                                    Neon Street
                                   </Typography>
                                   <Typography variant="body2" color="textSecondary">
-                                    ID: 1030114
+                                    0056 Marvin Land Suite 998
                                   </Typography>
-                                </Grid>
-                                <Grid item>
-                                  <Typography variant="body2" style={{ cursor: 'pointer' }}>
-                                    Remove
+                                  <Typography variant="body2" color="textSecondary">
+                                  Sydeny ,Australla
                                   </Typography>
+                                  <Typography variant="body1" color="error" style={{
+                                    fontWeight:'bold'
+                                  }}>
+                                  Year Of Completion &nbsp;&nbsp;2019
+                                  </Typography>
+                                  <Divider style={{
+            marginBottom:20,
+            width:'100%',
+         height:1,
+         background:'#d4d8db',
+         margin:5
+        }} />
+        <Grid
+  container
+  direction="row"
+  justify="space-around"
+  alignItems="flex-start"
+>
+<Grid item xs={4} >
+  <Typography style={{color:'#4c6371'}}>
+    99 years
+  </Typography>
+  <Typography style={{color:'#4c6371'}}>
+    Land Tenure
+  </Typography>
+  </Grid>
+  <Grid item xs={4} >
+  <Typography style={{color:'#4c6371'}}>
+    27281
+  </Typography>
+  <Typography style={{color:'#4c6371'}}>
+    Site Area
+  </Typography>
+  </Grid>
+  <Grid item xs={4} >
+  <Typography style={{color:'#4c6371'}}>
+   3333 
+  </Typography>
+  <Typography style={{color:'#4c6371'}}>
+NLA 9(SQFT)
+  </Typography>
+  </Grid>
+</Grid>
+
                                 </Grid>
+                               
                               </Grid>
                               
                             </Grid>

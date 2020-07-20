@@ -54,7 +54,7 @@ export default function Explore() {
 
   let itemsStyle = {
     padding: "0px",
-    background: "#f0f0f0",
+    background: "#e6e1e2",
     margin:"0 10px",
     boxShadow: "1px 1px 1px 1px #9E9E9E",
     borderRadius: "4px"
@@ -66,28 +66,31 @@ let imgStyle = {
 };
 
 let textBoxStyle = {
-    width: "40%",
+    width: "70%",
     
-    color: "black",
-    background: "transparent",
+    color: "#375674",
+    background:'transparent',
     fontSize: "20px",
-    fontFamily: "Times New Roman",
-    fontWeight:'bold'
+    
+    fontWeight:'bold',
+    textAlign:'left'
 };
 
 let textBoxStyle2 = {
     width: "70%",
     top: "280px",
     color: "black",
-    background: "transparent",
+    background:'transparent',
     fontSize: "12px",
-    fontStyle: "italic"
+   textAlign:'left'
+  
 };
 
 let scientists = jsonData.Scientists.items.map((item, index) => 
     <div key = {index} >
         <img style = {imgStyle} src = {item.imgSrc} ></img>
         <p style = {textBoxStyle} >{item.name}</p>
+      
         <p style = {textBoxStyle2} >{item.des}</p>
     </div>
 );

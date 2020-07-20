@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
       padding: theme.spacing(3),
-      textAlign: 'center',
+      
       color: theme.palette.text.secondary,
       height:50,
 
@@ -60,15 +60,20 @@ export default function SimpleContainer() {
    
       <Grid container direction="row"
   justify="center"
-  alignItems="center" style={{
+  alignItems="start" style={{
      position:'absolute',
      top:460-50
   }}>
         <Grid item xs={3}>
           <Paper className={classes.paper}>
+              <Typography style={{
+                color:'#375674',
+                fontWeight:'bold'
+              }}>
+              Search and Find
+              </Typography>
               <Typography>
-              Search and Find<br/>
-             Titile Keyword Address
+              Type Keyword Address
               </Typography>
              
           </Paper>
@@ -76,8 +81,14 @@ export default function SimpleContainer() {
         <Grid item xs={3}>
           <Paper className={classes.paper}>
          
+              <Typography style={{
+                color:'#375674',
+                fontWeight:'bold'
+              }}>
+              Location
+          
+              </Typography>
               <Typography>
-              Location<br/>
               Singapure
               </Typography>
           </Paper>
@@ -85,8 +96,14 @@ export default function SimpleContainer() {
         <Grid item xs={3}>
           <Paper className={classes.paper}>
        
+              <Typography style={{
+                color:'#375674',
+                fontWeight:'bold'
+              }}>
+              Type
+             
+              </Typography>
               <Typography>
-              Type<br/>
               Select
               </Typography>
           </Paper>
@@ -97,18 +114,15 @@ export default function SimpleContainer() {
            
         }}>
           <IconButton color="#fff" aria-label="Search" style={{
-              color:'#fff'
+              color:'#fff',
+         marginLeft:10
           }} >
           <SeacrhIcon />
         </IconButton>
           </Paper>
         </Grid>
       </Grid>
-      <Grid container direction="row"
-  justify="center"
-  alignItems="center">
-
-      </Grid>
+     
     </div>
 
 </Paper>

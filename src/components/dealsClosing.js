@@ -17,7 +17,7 @@ import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles((theme)=>({
 cardRoot:{
-    maxWidth: 345,
+    maxWidth: 360,
 },
   media: {
     height: 140,
@@ -84,37 +84,57 @@ export default function MediaCard(props) {
          background:'silver',
          margin:5
         }} />
+        
      <Grid
   container
   direction="row"
   justify="center"
-  alignItems="center"
+
   spacing={1}
 >
-        <Grid item xs={10}>
-         <Typography>Year Of completetion</Typography>
+ 
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+        <Typography>Year Of completetion</Typography>
+        <Typography >2019</Typography>
+        </div>
         </Grid>
-        <Grid item xs={2}>
-          <Typography>2019</Typography>
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+            <Typography>Land Tenure</Typography>
+            <Typography >99 year</Typography>
+          </div>
+       
         </Grid>
-        <Grid item xs={9}>
-         <Typography>Land Tenure</Typography>
-        </Grid>
-        <Grid item xs={3}>
-          <Typography>99 years</Typography>
-        </Grid>
-        <Grid item xs={10}>
-         <Typography>Site Area</Typography>
-        </Grid>
-        <Grid item xs={2}>
+       
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Site Area</Typography>
           <Typography>27281</Typography>
+          </div>
+         
         </Grid>
-        <Grid item xs={10}>
-         <Typography>NLA 9(Sqft)</Typography>
-        </Grid>
-        <Grid item xs={2}>
+        
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>NLA 9(Sqft)</Typography>
           <Typography>3333</Typography>
+          </div>
+         
         </Grid>
+       
         <Divider style={{
             marginBottom:20,
             width:'100%',
@@ -122,24 +142,39 @@ export default function MediaCard(props) {
          background:'silver',
          margin:5
         }} />
-        <Grid item xs={10}>
-         <Typography>Carpark Lots</Typography>
-        </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Carpark Lots</Typography>
           <Typography>900</Typography>
+        </div>
+         
         </Grid>
-        <Grid item xs={6}>
-         <Typography>Component</Typography>
+        
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+             <Typography>Component</Typography>
+             <Typography >Office, Retail,Hotel</Typography>
+          </div>
+      
         </Grid>
-        <Grid item xs={6}>
-          <Typography>Office, Retail,Hotel</Typography>
-        </Grid>
-        <Grid item xs={7}>
-         <Typography>Majar Tenants</Typography>
-        </Grid>
-        <Grid item xs={5}>
+       
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Majar Tenants</Typography>
           <Typography>Citi bank Allian</Typography>
+          </div>
+         
         </Grid>
+        
         </Grid>
         </CardContent>
       </CardActionArea>
@@ -161,7 +196,7 @@ export default function MediaCard(props) {
           image={require('../assets/building1.jpg')}
           title="Contemplative Reptile"
         />
-       <CardContent>
+               <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Robinson 77
           </Typography>
@@ -178,37 +213,57 @@ export default function MediaCard(props) {
          background:'silver',
          margin:5
         }} />
+        
      <Grid
   container
   direction="row"
   justify="center"
-  alignItems="center"
+
   spacing={1}
 >
-        <Grid item xs={10}>
-         <Typography>Year Of completetion</Typography>
+ 
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+        <Typography>Year Of completetion</Typography>
+        <Typography >2019</Typography>
+        </div>
         </Grid>
-        <Grid item xs={2}>
-          <Typography>2019</Typography>
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+            <Typography>Land Tenure</Typography>
+            <Typography >99 year</Typography>
+          </div>
+       
         </Grid>
-        <Grid item xs={9}>
-         <Typography>Land Tenure</Typography>
-        </Grid>
-        <Grid item xs={3}>
-          <Typography>99 years</Typography>
-        </Grid>
-        <Grid item xs={10}>
-         <Typography>Site Area</Typography>
-        </Grid>
-        <Grid item xs={2}>
+       
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Site Area</Typography>
           <Typography>27281</Typography>
+          </div>
+         
         </Grid>
-        <Grid item xs={10}>
-         <Typography>NLA 9(Sqft)</Typography>
-        </Grid>
-        <Grid item xs={2}>
+        
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>NLA 9(Sqft)</Typography>
           <Typography>3333</Typography>
+          </div>
+         
         </Grid>
+       
         <Divider style={{
             marginBottom:20,
             width:'100%',
@@ -216,24 +271,39 @@ export default function MediaCard(props) {
          background:'silver',
          margin:5
         }} />
-        <Grid item xs={10}>
-         <Typography>Carpark Lots</Typography>
-        </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Carpark Lots</Typography>
           <Typography>900</Typography>
+        </div>
+         
         </Grid>
-        <Grid item xs={6}>
-         <Typography>Component</Typography>
+        
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+             <Typography>Component</Typography>
+             <Typography >Office, Retail,Hotel</Typography>
+          </div>
+      
         </Grid>
-        <Grid item xs={6}>
-          <Typography>Office, Retail,Hotel</Typography>
-        </Grid>
-        <Grid item xs={7}>
-         <Typography>Majar Tenants</Typography>
-        </Grid>
-        <Grid item xs={5}>
+       
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Majar Tenants</Typography>
           <Typography>Citi bank Allian</Typography>
+          </div>
+         
         </Grid>
+        
         </Grid>
         </CardContent>
       </CardActionArea>
@@ -255,7 +325,7 @@ export default function MediaCard(props) {
           image={require('../assets/building1.jpg')}
           title="Contemplative Reptile"
         />
-        <CardContent>
+               <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Robinson 77
           </Typography>
@@ -272,37 +342,57 @@ export default function MediaCard(props) {
          background:'silver',
          margin:5
         }} />
+        
      <Grid
   container
   direction="row"
   justify="center"
-  alignItems="center"
+
   spacing={1}
 >
-        <Grid item xs={10}>
-         <Typography>Year Of completetion</Typography>
+ 
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+        <Typography>Year Of completetion</Typography>
+        <Typography >2019</Typography>
+        </div>
         </Grid>
-        <Grid item xs={2}>
-          <Typography>2019</Typography>
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+            <Typography>Land Tenure</Typography>
+            <Typography >99 year</Typography>
+          </div>
+       
         </Grid>
-        <Grid item xs={9}>
-         <Typography>Land Tenure</Typography>
-        </Grid>
-        <Grid item xs={3}>
-          <Typography>99 years</Typography>
-        </Grid>
-        <Grid item xs={10}>
-         <Typography>Site Area</Typography>
-        </Grid>
-        <Grid item xs={2}>
+       
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Site Area</Typography>
           <Typography>27281</Typography>
+          </div>
+         
         </Grid>
-        <Grid item xs={10}>
-         <Typography>NLA 9(Sqft)</Typography>
-        </Grid>
-        <Grid item xs={2}>
+        
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>NLA 9(Sqft)</Typography>
           <Typography>3333</Typography>
+          </div>
+         
         </Grid>
+       
         <Divider style={{
             marginBottom:20,
             width:'100%',
@@ -310,24 +400,39 @@ export default function MediaCard(props) {
          background:'silver',
          margin:5
         }} />
-        <Grid item xs={10}>
-         <Typography>Carpark Lots</Typography>
-        </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Carpark Lots</Typography>
           <Typography>900</Typography>
+        </div>
+         
         </Grid>
-        <Grid item xs={6}>
-         <Typography>Component</Typography>
+        
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+             <Typography>Component</Typography>
+             <Typography >Office, Retail,Hotel</Typography>
+          </div>
+      
         </Grid>
-        <Grid item xs={6}>
-          <Typography>Office, Retail,Hotel</Typography>
-        </Grid>
-        <Grid item xs={7}>
-         <Typography>Majar Tenants</Typography>
-        </Grid>
-        <Grid item xs={5}>
+       
+        <Grid item xs={12}>
+        <div style={{
+          display:'flex',
+          justifyContent:'space-between'
+        }}>
+          <Typography>Majar Tenants</Typography>
           <Typography>Citi bank Allian</Typography>
+          </div>
+         
         </Grid>
+        
         </Grid>
         </CardContent>
       </CardActionArea>
