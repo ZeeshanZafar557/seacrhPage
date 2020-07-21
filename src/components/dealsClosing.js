@@ -44,17 +44,18 @@ export default function MediaCard(props) {
 
   return (
     <Container maxWidth="lg" className={classes.containerMargin}>
-        <Typography variant="h3" component="h2" style={{
+        <Typography variant="h1" component="h2" style={{
             marginTop:20,
-           color:'#375674'
+           color:'#1E495B',
+           fontSize:40
         }}>
             {props.name}
         </Typography>
         <Divider  style={{
             marginBottom:20,
             width:50,
-         height:5,
-         background:'#375674',
+         height:3,
+         background:'#1E495B',
          marginTop:20,
          marginBottom:40
         }} />
@@ -70,13 +71,20 @@ export default function MediaCard(props) {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h4" component="h4" style={{
+            fontSize:18,
+            fontWeight:'400'
+          }}>
             Robinson 77
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" style={{
+            color:'#77838F'
+          }} component="p">
             Robinson 77s are a widespread group
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" style={{
+            color:'#77838F'
+          }} component="p">
             Robinson 77s ar
           </Typography>
           <Divider style={{
@@ -93,6 +101,9 @@ export default function MediaCard(props) {
   justify="center"
 
   spacing={1}
+  style={{
+    color:'#77838F'
+  }}
 >
  
         <Grid item xs={12}>
@@ -197,7 +208,9 @@ export default function MediaCard(props) {
     </Card>
     </Grid>
     <Grid item xs={12} md={4}>
-    <Card className={classes.cardRoot}>
+    <Card className={classes.cardRoot} style={{
+    color:'#77838F'
+  }}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -205,7 +218,11 @@ export default function MediaCard(props) {
           title="Contemplative Reptile"
         />
                <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h5" style={{
+            fontSize:18,
+            fontWeight:'400',
+            color:'#000'
+          }}>
             Robinson 77
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -332,7 +349,9 @@ export default function MediaCard(props) {
     </Card>
     </Grid>
     <Grid item xs={12} md={4}>
-    <Card className={classes.cardRoot}>
+    <Card className={classes.cardRoot} style={{
+      color:'#77838F'
+    }}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -340,7 +359,11 @@ export default function MediaCard(props) {
           title="Contemplative Reptile"
         />
                <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h5" style={{
+            fontSize:18,
+            fontWeight:'400',
+            color:'#000'
+          }}>
             Robinson 77
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">

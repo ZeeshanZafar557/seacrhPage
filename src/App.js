@@ -12,6 +12,8 @@ render()
     
 <TopNav/>
 <Banner/>
+<br/>
+<br/>
 <DealsClosing name={'Deals Closing'}/>
 <Explore/>
 <MoreProperty/>

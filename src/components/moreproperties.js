@@ -52,26 +52,29 @@ export default function Explore() {
 
     return (
         <Container maxWidth="xl" style={{
-            backgroundColor:'#e6ecf7',
+            backgroundColor:'#f3f9f8',
         }}>
 
             <Grid container className={classes.root}
                 direction="row"
                 justify="center"
-                alignItems="center"  >
+                alignItems="center" style={{
+                  paddingTop:60
+                }}  >
                 {newArray.map(() => {
                     return (
                        
                         <Grid item xs={12} md={5} style={{
-                            marginTop:40,
-                            marginLeft:40,
-                            marginBottom:10
+                            marginTop:30,
+                            marginLeft:30,
+                        boxShadow:'0',
+               
                         }}>
                         <Paper className={classes.paper}>
                           <Grid container spacing={2}>
                             <Grid item>
                               <ButtonBase className={classes.image}>
-                                <img className={classes.img} alt="complex" src="https://media.timeout.com/images/103812417/630/472/image.jpg" 
+                                <img className={classes.img} alt="complex" src="https://appshah.com/pro/virgate/img/imageSmall_1.png" 
                                 style={{
                                   
                                     width: '100%',
@@ -91,17 +94,20 @@ export default function Explore() {
                                     color:'#3e535b',
                               
                                   }}>
-                                    Neon Street
+                                    76 Neon Street
                                   </Typography>
-                                  <Typography variant="body2" color="textSecondary">
+                                  <Typography variant="body2" style={{
+                                    color:'#98A3AF',
+                                    fontSize:12
+                                  }}>
                                     0056 Marvin Land Suite 998
                                   </Typography>
-                                  <Typography variant="body2" color="textSecondary">
-                                  Sydeny ,Australla
-                                  </Typography>
+                               
                                   <Typography variant="body1"  style={{
                                     fontWeight:'bold',
-                                    color:'#FD615A'
+                                    color:'#FD615A',
+                                    marginTop:5,
+                                    fontSize:14
                                   }}>
                                   Year Of Completion &nbsp;&nbsp;2019
                                   </Typography>
@@ -120,26 +126,26 @@ export default function Explore() {
   style={{marginTop:20}}
 >
 <Grid item xs={4} >
-  <Typography style={{color:'#4c6371'}}>
+  <Typography style={{color:'#98A3AF'}}>
     99 years
   </Typography>
-  <Typography style={{color:'#4c6371',marginTop:10}}>
+  <Typography style={{color:'#98A3AF'}}>
     Land Tenure
   </Typography>
   </Grid>
   <Grid item xs={4} >
-  <Typography style={{color:'#4c6371'}}>
+  <Typography style={{color:'#98A3AF'}}>
     27281
   </Typography>
-  <Typography style={{color:'#4c6371',marginTop:10}}>
+  <Typography style={{color:'#98A3AF'}}>
     Site Area
   </Typography>
   </Grid>
   <Grid item xs={4} >
-  <Typography style={{color:'#4c6371'}}>
+  <Typography style={{color:'#98A3AF'}}>
    3333 
   </Typography>
-  <Typography style={{color:'#4c6371',marginTop:10}}>
+  <Typography style={{color:'#98A3AF'}}>
 NLA 9(SQFT)
   </Typography>
   </Grid>
@@ -164,10 +170,12 @@ NLA 9(SQFT)
               display:'flex',
             
               margin:'0px auto',
-             marginTop:20,
-              marginBottom:10
+             marginTop:30,
+              marginBottom:10,padding:20,
+              width:172,
+              height:62
             }}>
-  View More
+  View All
 </Button>
 <br/>
         </Container>

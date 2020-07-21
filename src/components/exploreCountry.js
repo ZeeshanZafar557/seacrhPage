@@ -1,18 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-import Paper from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
-import { Zoom } from 'react-slideshow-image';
+import ArrowRight from '@material-ui/icons/ArrowRightSharp';
+import ArrowLeft from '@material-ui/icons/ArrowLeftSharp'
 import 'react-slideshow-image/dist/styles.css'
 import CarouselSlider from "react-carousel-slider";
 import jsonData from './data'
@@ -51,7 +46,7 @@ export default function Explore() {
 
   let itemsStyle = {
     padding: "0px",
-    background: "#f7f7f7",
+    background: "#F2F5F5",
     margin:"0 10px",
     
     borderRadius: "4px",
@@ -59,7 +54,7 @@ export default function Explore() {
 };
 
 let imgStyle = {
-  width:336,
+  width:290,
     height: 441,
     
 };
@@ -67,7 +62,7 @@ let imgStyle = {
 let textBoxStyle = {
   
     width: "70%", 
-    color: "#1E495B",
+    color: "#1C4050",
     background:'transparent',
     fontSize: "20px",
     fontWeight:'600',
@@ -93,19 +88,31 @@ let scientists = jsonData.Scientists.items.map((item, index) =>
     </div>
 );
 
-let rBtnCpnt = (<div >
-    
-</div>);
+let rBtnCpnt = (
+<ArrowRight style={{
+  backgroundColor:'black',
+  padding:10,
+  borderRadius:50,
+  position:'absolute',
+  right:120,
+color:'#fff'
+}}/>
+);
 
-let lBtnCpnt = (<div >
-   
-</div>);
+let lBtnCpnt = (<ArrowLeft style={{
+  backgroundColor:'black',
+  padding:10,
+  borderRadius:50,
+  position:'absolute',
+  left:120,
+color:'#fff'
+}} />);
 
 
         
 
 let scientistsCard = (<CarouselSlider 
-    sliderBoxStyle = {{height: "650px", width: "80%", background: "transparent"}} 
+    sliderBoxStyle = {{height: "650px", width: "85%", background: "transparent"}} 
     accEle = {{dots: false}}
     slideCpnts = {scientists} 
     itemsStyle = {itemsStyle} 
@@ -116,18 +123,19 @@ let scientistsCard = (<CarouselSlider
 />);
   return (
     <Container maxWidth="xl" className={classes.containerMargin}>
-        <Typography variant="h3" component="h2" style={{
+        <Typography variant="h1" component="h1" style={{
             marginTop:20,
-           color:'#375674',
-           marginLeft:90
+           color:'#1E495B',
+           marginLeft:90,
+           fontSize:40
         }}>
             Explore Country Opportunities
         </Typography>
         <Divider style={{
             marginBottom:20,
             width:50,
-         height:5,
-         background:'#375674',
+         height:3,
+         background:'#1E495B',
          marginLeft:90,
          marginTop:20
         }} />

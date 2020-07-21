@@ -174,20 +174,46 @@ export default function PrimarySearchAppBar() {
           <div className={classes.sectionDesktop}>
           <MenuItem>
      
-        <p>Add a Property</p>
+        <p style={{
+          color: '#1D223C',
+          fontFamily: 'sans-serif',
+          fontSize: '16px',
+          fontWeight: '500',
+          width:100,
+       
+        }}>Add a Property</p>
       </MenuItem>
       <MenuItem>
      
-     <p>Client Login</p>
+     <p style={{
+          color: '#1D223C',
+          fontFamily: 'sans-serif',
+          fontSize: '16px',
+          fontWeight: '500',
+          width:100,
+        
+        }}>Client Login</p>
    </MenuItem>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
+            <IconButton aria-label="show 17 new notifications" style={{
+                       color: '#1D223C',
+                       fontFamily: 'sans-serif',
+                       fontSize: '16px',
+                       fontWeight: '400',
+                       width:50,
+                      
+            }}>
               
                 <SeacrhIcon />
               
             </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
+            <IconButton aria-label="show 17 new notifications" color="inherit" style={{
+                       color: '#1D223C',
+                       fontFamily: 'sans-serif',
+                       fontSize: '16px',
+                       fontWeight: '400'
+            }}>
               
-              <MenuIconnew />
+             <img src="https://appshah.com/pro/virgate/img/iconSidebar.png"/>
             
           </IconButton>
            
