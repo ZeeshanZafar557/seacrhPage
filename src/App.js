@@ -14,10 +14,10 @@ render()
 <Banner/>
 <br/>
 <br/>
-<DealsClosing name={'Deals Closing'}/>
+<DealsClosing name={'Deals Closing'} buttonText={'REGISTER TO BID'} array={[1,2,3]}/>
 <Explore/>
 <MoreProperty/>
-<DealsClosing name={'Invest Around The World'}/>
+<DealsClosing name={'Invest Around The World'} buttonText={'Execute NDA'} array={[1,2,3,4,5,6]}/>
     </>
   )
 }

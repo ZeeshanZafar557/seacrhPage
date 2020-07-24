@@ -19,7 +19,7 @@ const styles = {
         backgroundRepeat:'no-repeat',
         width:'100%',
         backgroundSize:'cover',
-        height:470,
+        height:412,
       paddingBottom: 48,
    
     },
@@ -48,9 +48,9 @@ export default function SimpleContainer() {
     <Paper style={styles.paperContainer}>
     <Typography variant="h1" style={{
         color:'#fff',
-        paddingTop:138,
+        paddingTop:120,
         paddingLeft:120,
-        fontSize:68,
+        fontSize:60,
      
        letterSpacing:1.25271,
        textTransform:'initial'
@@ -76,7 +76,7 @@ export default function SimpleContainer() {
          height:4,
          background:'#fff',
          marginLeft:120,
-         marginTop:20
+         marginTop:40
         }} />
 
 
@@ -84,7 +84,7 @@ export default function SimpleContainer() {
   justify="center"
   alignItems="start" style={{
      position:'absolute',
-     top:530,
+     top:470,
     
   
   }}>

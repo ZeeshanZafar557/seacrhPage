@@ -60,7 +60,8 @@ export default function Explore() {
                 justify="center"
                 alignItems="center" style={{
                   paddingTop:60
-                }}  >
+                }} 
+                spacing={2} >
                 {newArray.map(() => {
                     return (
                        
